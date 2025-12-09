@@ -6,43 +6,61 @@
     <title>Travelico</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="nav1">Travelico</div>
-            <div class="nav2">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="./htmlLinks/aboutUs.html">About us</a></li>
-                    <li><a href="./htmlLinks/contactUs.html">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="nav3">
-                <input type="text" id="searchInp" placeholder="search the city">
-                <label for="searchInp"><img src="./assests/search-svgrepo-com.svg" alt="this is image" id="search"></label>
-                <button id="Btn">search</button>
-                <button id="Btn">clear</button>
-            </div>
-        </nav>
-    </header>
+
+<header>
+    <nav>
+        <div class="nav1">Travelico</div>
+
+        <div class="nav2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="./htmlLinks/aboutUs.html">About us</a></li>
+                <li><a href="./htmlLinks/contactUs.html">Contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="nav3">
+            <input type="text" id="searchInp" placeholder="search the city">
+            <label for="searchInp"><img src="./assests/search-svgrepo-com.svg" id="search"></label>
+            <button id="searchBtn" class="Btn">search</button>
+            <button id="clearBtn" class="Btn">clear</button>
+        </div>
+    </nav>
+</header>
+
+<!-- 3-Column Layout -->
+<main class="layout">
+
+    <!-- LEFT FIXED SIDEBAR -->
     <aside class="side-menu">
         <div class="line"></div>
 
-    <div class="social-icons">
-        <a href="#"><img src="./assests/social/twitter-color-svgrepo-com.svg" alt="twitter"></a>
-        <a href="#"><img src="./assests/social/facebook-svgrepo-com.svg" alt="facebook"></a>
-        <a href="#"><img src="./assests/social/instagram-1-svgrepo-com.svg" alt="instagram"></a>
-        <a href="#"><img src="./assests/social/youtube-color-svgrepo-com (2).svg" alt="youtube"></a>
-    </div>
-    </aside>
-    <main>
-        <div class="mainBlock">
-            <h1>EXPLORE DREAM DESTINATION</h1>
-            <p>It Encourages exploration of unfamiliar embracing diverse cultures and landscapes, while pursuing the desired destination that captivates the heart and ignites a sense of wonder.</p>
-            <button id="bookNow">Book Now</button>
+        <div class="social-icons">
+            <a href="#"><img src="./assests/social/twitter-color-svgrepo-com.svg" alt=""></a>
+            <a href="#"><img src="./assests/social/facebook-svgrepo-com.svg" alt=""></a>
+            <a href="#"><img src="./assests/social/instagram-1-svgrepo-com.svg" alt=""></a>
+            <a href="#"><img src="./assests/social/youtube-color-svgrepo-com (2).svg" alt=""></a>
         </div>
-        
-    </main>
-    <script src="scripts.js"></script>  
+    </aside>
+
+    <!-- MAIN HERO CONTENT -->
+    <section class="mainBlock">
+        <h1>EXPLORE DREAM DESTINATION</h1>
+        <p>
+            It encourages exploration of unfamiliar places, embracing diverse cultures and landscapes,
+            while pursuing the desired destination that captivates the heart and ignites a sense of wonder.
+        </p>
+        <button id="bookNow">Book Now</button>
+    </section>
+
+    <!-- RIGHT SIDE CARDS -->
+    <section id="cardsContainer" class="cards-area"></section>
+
+</main>
+
+<script src="scripts.js"></script>
+
 </body>
 </html>
