@@ -1,0 +1,107 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background */
+body {
+    background-image: url('./assests/new-bg.jpg');  /* make sure folder name is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 0, 0, 0.5);   /* transparent black background */
+}
+
+/* Left side of nav */
+nav .nav1 {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Right side of nav */
+nav .nav2 ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+/* Individual items */
+nav .nav2 ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+nav .nav2 ul li a:hover {
+    color: #00eaff;
+}
+.nav3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    white-space: nowrap;   /* prevents wrapping */
+}
+/* Search bar */
+#searchInp{
+    margin-right: -175px;
+    width:400px;
+    height:35px;
+    border-radius: 20px;
+    color:#00eaff ;
+    padding-left: 15px; 
+
+}
+#search {
+    margin-bottom: -5px;
+    margin-left: -45px;
+    height: 30px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    object-fit: contain;
+}
+.nav3 button{
+    height:25px;
+    width: 60px;
+    margin-right: 10px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    background-color:#00eaff;
+}
+.mainBlock{
+    color: white;
+    margin-top: 10vh;
+    margin-left: 220px;
+
+}
+.mainBlock h1{
+    font-weight: 700;
+}
+.mainBlock p{
+    margin-top: 50px;
+    font-weight: 600;
+    color: aqua;
+    margin-left: 20px;
+}
+/*this is the main block css*/
+main{
+    display: flex;
+    
+}
