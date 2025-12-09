@@ -54,7 +54,9 @@ nav .nav2 ul li a:hover {
     display: flex;
     align-items: center;
     gap: 10px;
-    white-space: nowrap;   /* prevents wrapping */
+    white-space: nowrap;
+       /* prevents wrapping */
+       visibility: hidden;
 }
 /* Search bar */
 #searchInp{
@@ -85,25 +87,100 @@ nav .nav2 ul li a:hover {
     color: white;
     background-color:#00eaff;
 }
+/*aside tag CSS*/
+.side-menu {
+    width: 80px; 
+    height: 100vh;
+    /* your teal-like color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.side-menu .line {
+    width: 1px;
+    height: 200px;
+    background-color: #ffffff90;  /* translucent white */
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    
+}
+.social-icons a img{
+    width: 30px;
+}
+/*mainBlock CSS*/
 .mainBlock{
     color: white;
     margin-top: 10vh;
     margin-left: 220px;
-    width:40vw;
+    width:70vw;
 
 }
 .mainBlock h1{
     font-weight: 700;
     font-size: 60px;
 }
+.mainBlock .main2{
+    margin-top: 20px;
+    align-items: center;
+    height: 20vh;
+    width: 80vw;
+background: rgba(0, 0, 0, 0.5); 
+border-radius: 10px; 
+}
 .mainBlock p{
-    margin-top: 50px;
-    font-weight: 600;
-    color: aqua;
+    padding-top: 20px;
+    font-weight: 500;
+    color: white;
     margin-left: 20px;
 }
 /*this is the main block css*/
 main{
     display: flex;
     
+}
+.main3{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.main3 .our2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.main3 .our2 .card1{
+    display: flex;
+    margin-left: 30px;
+    background: rgba(0, 0, 0, 0.5); 
+    padding: 10px;
+    border-radius: 10px;
+}
+.mainBlock .main3 .our2 .card1 #pic{
+    height: 30px;
+}
+#cardBtn{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    background-color: lightskyblue;
+    border: 1px solid white;
+    font-weight: 600;
+}
+.info{
+    padding: 10px;
 }

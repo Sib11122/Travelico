@@ -76,7 +76,7 @@ nav .nav2 ul li a:hover {
     outline: none;
     object-fit: contain;
 }
-.nav3 button{
+.nav3 #Btn{
     height:25px;
     width: 60px;
     margin-right: 10px;
@@ -85,7 +85,50 @@ nav .nav2 ul li a:hover {
     color: white;
     background-color:#00eaff;
 }
+.nav3 #Btn:hover{
+    background-color: aqua;
+}
+/*main CSS*/
+main{
+    display: flex;
+    flex-direction: row;
+}
+/*aside tag CSS*/
+.side-menu {
+    width: 80px; 
+    height: 100vh;
+    /* your teal-like color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.side-menu .line {
+    width: 1px;
+    height: 200px;
+    background-color: #ffffff90;  /* translucent white */
+    margin-bottom: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    
+}
+.social-icons a img{
+    width: 30px;
+}
+/*mainBlock CSS*/
 .mainBlock{
+    height: 70vh;
     color: white;
     margin-top: 10vh;
     margin-left: 220px;
@@ -98,12 +141,25 @@ nav .nav2 ul li a:hover {
 }
 .mainBlock p{
     margin-top: 50px;
-    font-weight: 600;
-    color: aqua;
+    font-weight: 500;
+    color: white;
     margin-left: 20px;
 }
-/*this is the main block css*/
+/* this is the main block css
 main{
     display: flex;
     
-}
+} */
+ .mainBlock #bookNow{
+    margin-top: 120px;
+    margin-left: 40px;
+    border:none;
+    width:120px;
+    height:40px;
+    background-color: #00eaff;
+    color: white;
+    border-radius: 10px;
+ }
+ .mainBlock #bookNow:hover{
+    background-color: aqua;
+ }

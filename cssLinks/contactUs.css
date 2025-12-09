@@ -55,6 +55,7 @@ nav .nav2 ul li a:hover {
     align-items: center;
     gap: 10px;
     white-space: nowrap;   /* prevents wrapping */
+visibility: hidden;
 }
 /* Search bar */
 #searchInp{
@@ -85,25 +86,95 @@ nav .nav2 ul li a:hover {
     color: white;
     background-color:#00eaff;
 }
-.mainBlock{
-    color: white;
-    margin-top: 10vh;
-    margin-left: 220px;
-    width:40vw;
+/*aside tag CSS*/
+.side-menu {
+    width: 80px; 
+    height: 100vh;
+    /* your teal-like color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
 
+.side-menu .line {
+    width: 1px;
+    height: 200px;
+    background-color: #ffffff90;  /* translucent white */
+    margin-bottom: 20px;
 }
-.mainBlock h1{
-    font-weight: 700;
-    font-size: 60px;
+
+.social-icons a {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 24px;
+    margin: 15px 0;
+    cursor: pointer;
+    
 }
-.mainBlock p{
-    margin-top: 50px;
-    font-weight: 600;
-    color: aqua;
-    margin-left: 20px;
+.social-icons a img{
+    width: 30px;
 }
 /*this is the main block css*/
-main{
+main article{
     display: flex;
-    
+    padding: 60px;
+    color: white;
+    /* align-items: center; */
+}
+article{
+    margin-top: 60px;
+    /* background-color: red; */
+    margin-left: 70px;
+}
+article h1{
+    margin-top: 10vh;
+    font-size: 70px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    /* padding-left: 70px; */
+    height: 70vh;
+    width: 50vw;
+    /* background-color: red; */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+
+}
+.right label{
+    margin-top: 10px;
+}
+.right input{
+    height: 30px;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: transparent; 
+    margin-top: 20px;
+    border: 1px solid white;
+}
+.right textarea{
+    border: 1px solid white;
+    background-color: transparent; 
+    padding: 20px;
+    margin-top: 20px;
+    height:150px;
+    border-radius: 10px;
+}
+#formBtn{
+    height: 40px;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #00eaff;
+    border: none;
+}
+#formBtn:hover{
+    background-color: aqua;
 }
