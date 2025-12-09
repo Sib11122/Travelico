@@ -89,10 +89,12 @@ nav .nav2 ul li a:hover {
     color: white;
     margin-top: 10vh;
     margin-left: 220px;
+    width:40vw;
 
 }
 .mainBlock h1{
     font-weight: 700;
+    font-size: 60px;
 }
 .mainBlock p{
     margin-top: 50px;
